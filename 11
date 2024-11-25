@@ -1,0 +1,18 @@
+//Program to Get character from the given string 
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the string:");
+        System.out.println("Enter the position");
+        String st1=scanner.nextLine();
+        int st2=scanner.nextInt();
+        if (st1.length()>=st2){
+            char fc=st1.charAt(st2);
+            System.out.println("The character is "+fc);
+        }else{
+            System.out.println("The String is too short");
+        }
+    }
+}
