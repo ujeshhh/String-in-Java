@@ -1,0 +1,23 @@
+//Program to check Anagram
+
+import java.util.*;
+
+public class AnagramChecker {
+    public static void main(String[] args) {
+        String firstString = "ten";
+        String secondString = "net";
+        if (firstString.length() != secondString.length()) {
+            System.out.println("No, the strings are not anagrams.");
+            return;
+        }
+        char[] array1 = firstString.toCharArray();
+        char[] array2 = secondString.toCharArray();
+        Arrays.sort(array1);
+        Arrays.sort(array2);
+        if (Arrays.equals(array1, array2)) {
+            System.out.println("Anagrams");
+        } else {
+            System.out.println("Not anagrams.");
+        }
+    }
+}
