@@ -1,0 +1,12 @@
+//Program to Iterate over character in string
+
+public class Main{
+    public static void main(String[] args){
+        String inp="Sathyabama";
+        for (int i=0;i<inp.length();i++){
+            char ch=inp.charAt(i);
+            System.out.print(ch + " ");
+        }
+    }
+}
+
