@@ -1,0 +1,24 @@
+//Integer to Roman
+
+import java.util.Scanner;
+public class IntegerToRoman {
+    public static String intToRoman(int num) {
+        String roman = "";
+        int[] values = {1000,500,100,50,10,5,1};
+        String[] romanLetters = {"M", "D", "C", "L", "X", "V", "I"};
+        for (int i = 0; i < values.length; i++) {
+            while (num >= values[i]) {
+                roman += romanLetters[i];
+                num -= values[i];
+            }
+        }
+        
+        return roman;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int num = scanner.nextInt();
+        System.out.println("Roman Numeral of Integer is: " + intToRoman(num));
+    }
+}
