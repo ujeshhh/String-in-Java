@@ -1,0 +1,12 @@
+//Convert string to string array
+
+public class Main{
+    public static void main(String[] args){
+        String st1="Java is platform independent programming language";
+        String[] sa=st1.split(" ");
+        System.out.println("The Stirng Array Converted:");
+        for(String word:sa){
+            System.out.print(word + " ");
+        }
+    }
+}
