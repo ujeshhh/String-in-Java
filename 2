@@ -1,0 +1,18 @@
+//Program to read two strig user input and check if First contains second
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter First string:");
+        String inp=scanner.nextLine();
+        System.out.println("Enter Second string:");
+        String inp2=scanner.nextLine();
+        if (inp.contains(inp2)){
+        System.out.println("The first string contains second string:");
+        }else{
+            System.out.println("The first string does not contain second string");
+        }
+    scanner.close();
+    }
+}
