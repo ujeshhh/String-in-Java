@@ -1,0 +1,14 @@
+//Program to print even length words
+
+public class PrintEvenLengthWords {
+    public static void main(String[] args) {
+        String input = "Hello Java";
+        String[] words = input.split(" ");
+        System.out.println("Even length words:");
+        for (String word : words) {
+            if (word.length() % 2 == 0) {
+                System.out.println(word);
+            }
+        }
+    }
+}
